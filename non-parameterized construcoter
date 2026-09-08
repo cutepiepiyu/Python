@@ -1,0 +1,6 @@
+class MyNewClass:
+    def hello(self):
+        print("Hello Word")
+
+obj=MyNewClass()
+obj.hello()

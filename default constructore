@@ -1,0 +1,7 @@
+class MyNewClass:
+    """This class is Demonstrates the creation of objects."""
+    num=100
+
+obj=MyNewClass()
+
+print(obj.num)

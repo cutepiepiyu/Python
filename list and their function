@@ -1,0 +1,40 @@
+# Create a list
+numbers = [10, 20, 30, 40, 50]
+
+print("Original List:", numbers)
+
+# 1. Add an element
+numbers.append(60)
+print("After append:", numbers)
+
+# 2. Insert an element
+numbers.insert(2, 25)
+print("After insert:", numbers)
+
+# 3. Remove an element
+numbers.remove(25)
+print("After remove:", numbers)
+
+# 4. Delete the last element
+numbers.pop()
+print("After pop:", numbers)
+
+# 5. Find length of list
+print("Length of list:", len(numbers))
+
+# 6. Sort the list
+numbers.sort()
+print("After sort:", numbers)
+
+# 7. Reverse the list
+numbers.reverse()
+print("After reverse:", numbers)
+
+# 8. Find maximum element
+print("Largest element:", max(numbers))
+
+# 9. Find minimum element
+print("Smallest element:", min(numbers))
+
+# 10. Find sum of elements
+print("Sum of elements:", sum(numbers))

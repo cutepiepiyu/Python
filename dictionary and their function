@@ -1,0 +1,45 @@
+# Create a dictionary
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "course": "M.Sc IT",
+    "marks": 85
+}
+
+print("Original Dictionary:", student)
+
+# 1. Access a value
+print("Name:", student["name"])
+
+# 2. Add a new item
+student["city"] = "Ahmedabad"
+print("After adding city:", student)
+
+# 3. Update a value
+student["marks"] = 90
+print("After updating marks:", student)
+
+# 4. Remove an item
+student.pop("age")
+print("After removing age:", student)
+
+# 5. Get all keys
+print("Keys:", student.keys())
+
+# 6. Get all values
+print("Values:", student.values())
+
+# 7. Get key-value pairs
+print("Items:", student.items())
+
+# 8. Check if a key exists
+if "name" in student:
+    print("Name is present in dictionary")
+
+# 9. Find number of items
+print("Length:", len(student))
+
+# 10. Print dictionary using loop
+print("Dictionary elements:")
+for key, value in student.items():
+    print(key, ":", value)
