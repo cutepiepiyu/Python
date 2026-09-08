@@ -1,0 +1,6 @@
+s1=input("Enter your String:")
+s2=input("Enter your String:")
+
+add=s1+" "+s2
+
+print("Your Result is:",add)

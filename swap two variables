@@ -1,0 +1,9 @@
+a=10
+b=20
+print("A is:",a)
+print("B is:",b)
+
+a,b=b,a
+print("After Swaping:")
+print("A is:",a)
+print("B is:",b)
