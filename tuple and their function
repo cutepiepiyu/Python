@@ -1,0 +1,36 @@
+# Create a tuple
+numbers = (10, 20, 30, 20, 40, 50)
+
+print("Original Tuple:", numbers)
+
+# 1. Find length
+print("Length of tuple:", len(numbers))
+
+# 2. Count an element
+print("Count of 20:", numbers.count(20))
+
+# 3. Find position (index)
+print("Index of 30:", numbers.index(30))
+
+# 4. Find maximum element
+print("Largest element:", max(numbers))
+
+# 5. Find minimum element
+print("Smallest element:", min(numbers))
+
+# 6. Find sum of elements
+print("Sum of elements:", sum(numbers))
+
+# 7. Check if an element exists
+
+i=input("Enter Number for find:")
+
+if i in numbers:
+    print("Number is present in the tuple")
+else:
+    print("Number is not present in the tuple")
+
+# 9. Print tuple using loop
+print("Tuple elements:")
+for i in numbers:
+    print(i)

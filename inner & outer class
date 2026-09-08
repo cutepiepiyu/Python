@@ -1,0 +1,27 @@
+class University:           
+
+    def __init__(self, university):
+        self.university = university
+
+    class Student:                
+
+        def __init__(self, name, enrollment_no,department):
+            self.name = name
+            self.enrollment_no = enrollment_no
+            self.department= department
+
+        def display(self):
+            print("Student Name:", self.name)
+            print("Enrollment Number:", self.enrollment_no)
+            print("Deparment:", self.department)
+
+# Create object of Outer Class
+univ = University("marwadi University")
+
+print("University Name:", univ.university)
+
+# Create object of Inner Class
+student = univ.Student("Rahul", 30,"M.Sc.")
+
+# Display student details
+student.display()

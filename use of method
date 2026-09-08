@@ -1,0 +1,25 @@
+# Demonstration of Method in Python
+
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Method to calculate total
+    def cal(self, m1, m2, m3):
+        total = m1 + m2 + m3
+        return total
+
+    # Method to display student details
+    def display(self, m1, m2, m3):
+        print("Student Name:", self.name)
+        print("Student Age:", self.age)
+        print("Total is:", self.cal(m1, m2, m3))
+
+
+# Create an object
+student1 = Student("Rahul", 20)
+
+# Call the display method
+student1.display(25, 25, 25)

@@ -1,0 +1,31 @@
+"""Method overloading"""
+
+class addition:
+    def add(self,a,b,c=0):
+        return a+b+c
+obj=addition()
+
+print("Addition of Two Number is:", obj.add(10,20))
+print("Addition of Three Number is:", obj.add(10,20,30))
+
+a=int(input("Enter 1st Number:"))
+b=int(input("Enter 2nd Number:"))
+print("Sum of Two Number:",obj.add(a,b))
+
+c=int(input("Enter 3rd Number:"))
+print("Sum of Three Number:",obj.add(a,b,c))
+
+
+"""Method overriding"""
+
+class animal:
+    def sound(self):
+        print("Animal Make a Sound.")
+class dog(animal):
+    def sound(self):
+        print("Dog Barks.")
+
+a=animal()
+d=dog()
+a.sound()
+d.sound()
