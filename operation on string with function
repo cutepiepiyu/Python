@@ -1,0 +1,37 @@
+def str_opp(s1, s2):
+    print("String 1:", s1)
+    print("String 2:", s2)
+
+    # 1. Concatenation
+    print("Concatenation:", s1 + s2)
+
+    # 2. Length
+    print("Length of String 1:", len(s1))
+    print("Length of String 2:", len(s2))
+
+    # 3. Uppercase
+    print("Uppercase:", s1.upper())
+
+    # 4. Lowercase
+    print("Lowercase:", s1.lower())
+
+    # 5. Reverse
+    print("Reverse:", s1[::-1])
+
+    # 6. Compare strings
+    if s1 == s2:
+        print("Both strings are equal")
+    else:
+        print("Both strings are different")
+
+    # 7. Find a character
+    ch = input("Enter a character to find: ")
+    if ch in s1 or s2:
+        print("Character found")
+    else:
+        print("Character not found")
+
+s1=input("Enter your String:")
+s2=input("Enter your String:")
+
+str_opp(s1,s2)
