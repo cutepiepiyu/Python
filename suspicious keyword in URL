@@ -1,0 +1,10 @@
+url=input("Enter Your URL: ")
+words=["login","verify","bank","free","password"]
+url=url.lower()
+found=False
+for word in words:
+    if word in url:
+        print("Suspicious Keyword Found is: ",word)
+        found=True
+if not found:
+    print("No Suspicious Keywords Found")

@@ -1,0 +1,6 @@
+filename=input("Enter File Name: ")
+ext=[".exe",".bat",".vbs",".scr",".cmd"]
+if filename.lower().endswith(tuple(ext)):
+    print("potentailly risky file.")
+else:
+    print("File is Safe.")

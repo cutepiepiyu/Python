@@ -1,0 +1,6 @@
+import os
+path="."
+print("File in current folder:")
+
+for f in os.listdir(path):
+    print(f)

@@ -1,0 +1,9 @@
+file = open("cyber_security.txt", "r")
+
+data = file.read()
+
+count = data.lower().count("failed")
+
+print("Total Failed Login Attempts:", count)
+
+file.close()

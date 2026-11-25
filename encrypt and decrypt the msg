@@ -1,0 +1,7 @@
+import base64
+msg=input("Enter Your message: ")
+data=msg.encode()
+encoded=base64.b64encode(data)
+print("Encoded message: ",encoded.decode())
+decoded=base64.b64decode(encoded)
+print("Decoded message: ",decoded.decode())

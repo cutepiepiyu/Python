@@ -1,0 +1,23 @@
+import whois
+
+# Accept domain name from user
+domain = input("Enter domain name: ")
+
+try:
+    # Perform WHOIS lookup
+    result = whois.whois(domain)
+
+    # Display WHOIS information
+    print("\nWHOIS Information")
+    print("------------------------")
+    print("Domain Name:", result.domain_name)
+    print("Registrar:", result.registrar)
+    print("Creation Date:", result.creation_date)
+    print("Expiration Date:", result.expiration_date)
+    print("Name Servers:", result.name_servers)
+    print("WHOIS Server:", result.whois_server)
+
+except Exception as e:
+    print("Error:", e)
+
+

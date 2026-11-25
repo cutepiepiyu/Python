@@ -1,0 +1,21 @@
+ip = input("Enter an IP Address: ")
+
+first = int(ip.split(".")[0])
+
+if first >= 1 and first <= 126:
+    print("Category: Class A")
+
+elif first >= 128 and first <= 191:
+    print("Category: Class B")
+
+elif first >= 192 and first <= 223:
+    print("Category: Class C")
+
+elif first >= 224 and first <= 239:
+    print("Category: Class D")
+
+elif first >= 240 and first <= 255:
+    print("Category: Class E")
+
+else:
+    print("Invalid IP Address")

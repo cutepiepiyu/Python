@@ -1,0 +1,16 @@
+import socket
+
+domain=input("Enter the domain name: ").strip()
+try:
+    print("\n DNS Information for:",domain)
+    result=socket.getaddrinfo(domain, None)
+    print("\n IP Addresses:")
+    for item in result:
+        ip_address=item[4][0]
+        print(ip_address)
+        
+    print("\nCanonical Hostname:")
+    print(socket.getfqdn(domain))
+
+except socket.gaierror:
+    print("Unable to retrieve DNS information.")
