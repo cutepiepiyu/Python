@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+# Data
+subjects = ['Python', 'Java', 'PHP', 'SQL']
+marks = [85, 75, 90, 80]
+
+# Create Bar Graph
+plt.bar(subjects, marks, color='skyblue', edgecolor='black')
+
+# Add Title and Labels
+plt.title("Subject-wise Marks")
+plt.xlabel("Subjects")
+plt.ylabel("Marks")
+
+# Display Bar Graph
+plt.show()

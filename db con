@@ -1,0 +1,20 @@
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    port=3308,
+    user="root",
+    password=""
+)
+
+cursor = conn.cursor()
+
+cursor.execute("CREATE DATABASE IF NOT EXISTS marwadi")
+print("Database created successfully!")
+
+conn.database = "marwadi"
+cursor.execute("create table if not exists customers(name varchar(255), city varchar(255))")
+print("Table created successfully!")
+
+cursor.close()
+conn.close()

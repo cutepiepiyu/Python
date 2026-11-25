@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Data
+subjects = ['Python', 'Java', 'PHP', 'SQL']
+marks = [40, 25, 20, 15]
+
+# Create Pie Chart
+plt.pie(marks, labels=subjects, autopct='%1.1f%%',
+        startangle=90)
+
+# Add Title
+plt.title("Subject-wise Marks Distribution")
+
+# Display Chart
+plt.show()

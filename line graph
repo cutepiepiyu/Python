@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+# Data
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+sales = [100, 150, 120, 180, 200, 250]
+
+# Create Line Graph
+plt.plot(months, sales, marker='o', color='blue',
+         linestyle='-', linewidth=2)
+
+# Add Title and Labels
+plt.title("Monthly Sales Report")
+plt.xlabel("Months")
+plt.ylabel("Sales")
+
+# Display Grid
+plt.grid(True)
+
+# Display Line Graph
+plt.show()

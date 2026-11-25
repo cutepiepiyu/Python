@@ -1,0 +1,78 @@
+
+import mysql.connector
+
+# Database Connection
+connection = mysql.connector.connect(
+    host="localhost",
+    port=3308,
+    user="root",
+    password="",
+    database="marwadi"
+)
+
+cursor = connection.cursor()
+
+# 1. Insert Records
+insert_query = "INSERT INTO customers (name, city) VALUES (%s, %s)"
+
+records = [
+    ("Priya", "Ahmedabad"),
+    ("Jigna", "Rajkot")
+]
+
+cursor.executemany(insert_query, records)
+connection.commit()
+print("Records inserted successfully!")
+
+# 2. Display Records
+cursor.execute("SELECT * FROM customers")
+rows = cursor.fetchall()
+
+print("\nCustomer Records:")
+print(rows)
+
+# 3. Update Record
+update_query = "UPDATE customers SET city = 'Mumbai' WHERE name = 'Priya'"
+
+cursor.execute(update_query)
+connection.commit()
+print("\nRecord updated successfully!")
+
+# Display Updated Records
+cursor.execute("SELECT * FROM customers")
+rows = cursor.fetchall()
+
+print("\nUpdated Records:")
+print(rows)
+
+# 4. Delete Record
+delete_query = "DELETE FROM customers WHERE name = 'Jigna'"
+
+cursor.execute(delete_query)
+connection.commit()
+print("\nRecord deleted successfully!")
+
+# Display Records After Deletion
+cursor.execute("SELECT * FROM customers")
+rows = cursor.fetchall()
+
+print("\nRecords After Deletion:")
+print(rows)
+
+# 5. Drop Table
+sql = "DROP TABLE customers"
+cursor.execute(sql)
+connection.commit()
+print("\nTable dropped successfully!")
+
+# 6. Drop Database
+db = "DROP DATABASE marwadi"
+cursor.execute(db)
+connection.commit()
+print("Database dropped successfully!")
+
+# Close Connection
+cursor.close()
+connection.close()
+
+print("\nDatabase connection closed!")
