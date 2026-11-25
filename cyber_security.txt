@@ -1,0 +1,8 @@
+Add data using w+ mode.Add data using a+ mode.
+
+login
+login failed
+login failed
+login 
+login
+login login failed

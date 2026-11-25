@@ -1,0 +1,4 @@
+import re
+txt = "Please contact us at jigna123@gmail.com or priya@gmail.com for more information."
+emails = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', txt)
+print("Extracted emails:", emails)
